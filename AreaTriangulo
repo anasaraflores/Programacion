@@ -1,0 +1,21 @@
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+
+int main() 
+
+
+	float a,b,c,P,Area,RAIZ
+	cout << "Ingrese lado a: " << endl;
+	cin >> a;
+	cout << " Ingrese lado b: " << endl;
+	cin >> b;
+	cout << " Ingerese lado C: " << endl;
+	cin >> c;
+	p = (a+b+c)/2;
+	area = sqrtf(p*(p-a)*(p-b)*(p-c));
+	cout << "El Area es: " << area << endl;
+	return 0;
+}
