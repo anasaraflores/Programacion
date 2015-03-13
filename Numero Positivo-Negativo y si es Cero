@@ -9,11 +9,10 @@ void main() {
 	cout << ("Ingrese un numero entero") << endl;
 	cin >> a;
 	if (a>=0) {
-		cout << "Es numero positivo" << endl;
-		      if(a=0){
+		      if(a==0){
 		            cout << "el numero es cero"<<endl;
 		     else{
-			        cout <<" el numero no es cero"<< endl;
+			      	cout << "Es numero positivo" << endl;
 			     }
 		     }
 
