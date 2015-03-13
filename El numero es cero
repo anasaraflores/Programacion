@@ -1,0 +1,19 @@
+
+#include"stdafx.h"
+#include<iostream>
+#include"conio.h"
+using namespace std;
+
+
+
+void main() {
+	float a;
+	cout << ("Ingrese un numero entero") << endl;
+	cin >> a;
+	if (a==0) {
+		cout << "El numero es cero" << endl;
+	} else {
+		cout << "El numero no es cero" << endl;
+	}
+	getch();
+}
