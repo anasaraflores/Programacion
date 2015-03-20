@@ -1,0 +1,24 @@
+// AFP.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main() 
+{
+	float a,s,t;
+	cout << "Ingrese el sueldo del empleado" << endl;
+	cin >> s;
+	cout << "Ingrese el salario minimo: " << endl;
+	cin >> a;
+	if (s>=2*a) 
+		t = (s*0.15);
+	else
+		t = s;
+	cout << "El total a pagar es: " << t << endl;
+	getch();
+}
