@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std;
+
+void main()
+{float NF,NP,P1,P2,P3,EF,P,Id;
+ cout <<"Id: " << endl;
+ cin >>Id;
+ while(Id!=-999){
+    cout <<" Ingrese nota practica: "<<endl;
+     cin >>NP;
+	 cout <<" Ingrese primer parcial: "<<endl;
+     cin >>P1;
+	 cout <<" Ingrese segundo patcial: "<<endl;
+     cin >>P2;
+	 cout <<" Ingrese tercer parcial: "<<endl;
+     cin >>P3;
+	 cout <<" Ingrese examen final: "<<endl;
+     cin >>EF;
+	 NF=(NP*0.2)+((P1+P2+P3)/3)*0.4+(EF*0.4);
+ cout <<"La nota final es:"<<NF<<endl;
+ cout<< " Ingrese Id: "<< endl;
+ cin >>Id;
+ }
+
+ getch();
+}
