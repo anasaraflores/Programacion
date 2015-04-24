@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+ using namespace std;
+
+ void main()
+ {int x,y,s=0,sig=1,i,p;
+  cout<<"Ingrese un numero: "<< endl;
+  cin>> x;
+  cout<<" ingrese base";
+  cin>> n;
+  for(i=1;i<n;i++)
+  { p=powf(x,i);
+    s=s+(sig)*p;
+	sig=sig*(-1);
+
+	cout<<" la suma es: "<<s<< endl;
+  }
+  getch();
+ }
