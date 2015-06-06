@@ -1,0 +1,75 @@
+#include "conio.h"
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+
+
+
+
+void ingreso(float Fundaciones[]);
+void mostrar(float Fundaciones[]);
+
+
+
+void main()
+{
+	int op; float Fundaciones[3];
+	Fundaciones[0]=0;
+	Fundaciones[1]=0;
+	Fundaciones[2]=0;
+	do{
+		system("cls");
+	cout<<"     Menu principal"<<endl;
+	cout <<"1.- Donar"<<endl;
+	cou <<"2.- Ver donaciones"t<<endl;
+	cout <<"0.- Salir"<<endl;
+	cout <<"Opcion:" <<endl;
+	cin>>op;
+	switch(op)
+	{
+	case 0: break;
+	case 1: ingreso(Fundaciones); break;
+	case 2: mostrar(Fundaciones); break;
+	default: cout<<"OPCION NO VALIDA";cout<<endl;system("pause");
+	}
+	}while(op != 0);
+}
+
+void ingreso(float Fundaciones[])
+{
+	int op, mont;
+	system("cls");
+	cout<<"     Fundaciones"<<endl;
+	cout <<"1.- Hogar"<<endl;
+	cout <<"2.- Fundacion"<<endl;
+	cout <<"3.- Oncologico"<<endl;
+	cout <<"4.- Donar a las 3 fundaciones"<<endl;
+	cout <<"0.- Volver"<<endl;
+	cout <<"Opcion:" <<endl;
+	cin>>op;
+	switch(op)
+	{
+	case 0: break;
+	case 1: cout<<"Monto a ingresar:";
+			cin>>mont;
+			Fundaciones[0]=Fundaciones[0]+mont;
+			break;
+	case 2: cout<<"Monto a ingresar:";
+			cin>>mont;
+			Fundaciones[1]=Fundaciones[1]+mont;
+			break;
+	case 3: cout<<"Monto a ingresar:";
+			cin>>mont;
+			Fundaciones[2]=Fundaciones[2]+mont;
+			break;
+	case 4: cout<<"Monto a ingresar:";
+			cin>>mont;
+			mont=mont/3;
+			Fundaciones[0]=Fundaciones[0]+mont;
+			Fundaciones[1]=Fundaciones[1]+mont;
+			Fundaciones[2]=Fundaciones[2]+mont;
+			break;
+	default: cout<<"Opcion no valida";cout<<endl;
+system("pause");
+	}
+}
